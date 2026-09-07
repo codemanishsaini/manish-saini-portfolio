@@ -285,8 +285,13 @@ body {
 
     .hero-container {
         height: auto;
-        padding: 20px;
+        padding: 30px;
     }
+    .skills-container {
+       height: auto;
+       padding: 30px;
+    }
+
 
     .title {
         font-size: 32px;
