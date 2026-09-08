@@ -12,18 +12,24 @@ body {
     align-items: center;
 }
 
-.nav-title {
+.nav-logo {
     margin-left: 10px;
     font-family: "Roboto", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     color: #ffffff;
 }
 
 .nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title {
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
     color: #ffffff;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    text-decoration: none;
 }
 
 .hero-container {
@@ -217,7 +223,15 @@ body {
     gap: 15px;
 }
 
-.contact-form input,
+.contact-form input{
+    background-color: #16213A;
+    color: #ffffff;
+    border: 1px solid #2B3855;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+
+}
 .contact-form textarea {
     background-color: #16213A;
     color: #ffffff;
@@ -266,10 +280,6 @@ body {
 }
 
 @media (max-width: 576px) {
-    .nav-items {
-        display: none !important;
-    }
-
     .nav-container {
         display: flex;
         flex-direction: column;
@@ -278,32 +288,47 @@ body {
         padding: 15px;
     }
 
+    .nav-logo {
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .nav-title {
         font-size: 14px;
-        margin-left: 6px;
+        margin: 5px 8px;
     }
 
     .hero-container {
         height: auto;
         padding: 30px;
     }
-    .skills-container {
-       height: auto;
-       padding: 30px;
-    }
 
+    .intro-container {
+        width: 100%;
+    }
 
     .title {
         font-size: 32px;
+        margin-top: 10px;
+        margin-bottom: 8px;
     }
 
     .sub-title {
         font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 8px;
     }
 
     .description {
         font-size: 14px;
         max-width: 90%;
+        margin: 8px auto;
     }
 
     .primary-button {
@@ -326,6 +351,17 @@ body {
         max-width: 90%;
     }
 
+    .skills-container {
+        height: auto;
+        padding: 30px;
+    }
+    .skills-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     .contact-form {
         width: 100%;
     }
@@ -333,5 +369,11 @@ body {
     .social-links {
         flex-wrap: wrap;
     }
+    .social-title  {
+        font-size: 20px;
+    }
+    .contact-section{
+        height: auto;
+        padding: 20px 30px;
+    }
 }
-
